@@ -47,7 +47,6 @@ def run_tests(cmd: str, cwd: str, timeout: int = 120) -> Dict:
         return {"ok": False, "reason": "error", "error": str(e)}
 
 @function_tool(strict_mode=False)
-
 def run_linters(cmd: str, cwd: str, timeout: int = 60) -> Dict:
     return run_tests(cmd, cwd, timeout)
 # Safety checks
