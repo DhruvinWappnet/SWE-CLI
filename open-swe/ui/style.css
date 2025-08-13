@@ -1,10 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
     margin: 0;
     overflow: hidden;
 }
@@ -12,11 +12,11 @@ body {
 .container {
     background: #fff;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 350px;
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out; /* Smooth transition for form switching */
 }
 
 .form-group {
@@ -36,33 +36,33 @@ input[type="email"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded input fields */
     box-sizing: border-box;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-    border-color: #007bff;
+    border-color: #007bff; /* Blue border on focus */
     outline: none;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #007bff; /* Blue button */
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded button */
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
     width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .switch-link {
@@ -72,7 +72,7 @@ button:hover {
 }
 
 .switch-link a {
-    color: #007bff;
+    color: #007bff; /* Blue link */
     text-decoration: none;
 }
 
